@@ -64,3 +64,7 @@ Create a **web application using HTML, CSS, and Vanilla JavaScript** based on a 
 ### **Project Generation Prompt**
 
 Generate a **complete working web application** using **HTML, CSS, and Vanilla JavaScript** **without using any frameworks**. Include the necessary files such as **index.html**, **style.css**, and **script.js**.
+
+
+
+
