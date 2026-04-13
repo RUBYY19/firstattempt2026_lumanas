@@ -1,0 +1,83 @@
+/* Extracted CSS from app.js */
+@import url('https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,300;0,9..40,400;0,9..40,500;0,9..40,600;0,9..40,700;1,9..40,400&family=DM+Serif+Display:ital@0;1&display=swap');
+
+*, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+
+:root {
+  --navy: #1a2456;
+  --navy-dark: #111840;
+  --navy-mid: #243066;
+  --blue: #2d3d9e;
+  --blue-light: #3d52c4;
+  --accent: #f0c43f;
+  --accent-dark: #d4a820;
+  --white: #ffffff;
+  --off-white: #f4f6fb;
+  --gray-50: #f8f9fc;
+  --gray-100: #eef0f7;
+  --gray-200: #dde1ef;
+  --gray-300: #c3c9dd;
+  --gray-500: #7a83a6;
+  --gray-700: #3d4566;
+  --green: #22c55e;
+  --green-light: #dcfce7;
+  --red: #ef4444;
+  --red-light: #fee2e2;
+  --orange: #f97316;
+  --orange-light: #ffedd5;
+  --purple: #8b5cf6;
+  --shadow-sm: 0 1px 3px rgba(26,36,86,.08), 0 1px 2px rgba(26,36,86,.04);
+  --shadow: 0 4px 16px rgba(26,36,86,.1), 0 1px 4px rgba(26,36,86,.06);
+  --shadow-lg: 0 12px 40px rgba(26,36,86,.14), 0 4px 12px rgba(26,36,86,.08);
+  --radius: 12px;
+  --radius-sm: 8px;
+  --radius-lg: 18px;
+  --radius-xl: 24px;
+  --font: 'DM Sans', sans-serif;
+  --font-display: 'DM Serif Display', serif;
+}
+
+html, body { height: 100%; font-family: var(--font); background: var(--off-white); color: var(--navy-dark); }
+
+#app { display: flex; height: 100vh; overflow: hidden; }
+
+/* SIDEBAR */
+#sidebar {
+  width: 240px; min-width: 240px; background: var(--navy-dark);
+  display: flex; flex-direction: column; height: 100vh; overflow-y: auto;
+  transition: width .25s; z-index: 100;
+}
+#sidebar::-webkit-scrollbar { width: 4px; }
+#sidebar::-webkit-scrollbar-thumb { background: rgba(255,255,255,.15); border-radius: 4px; }
+.sidebar-logo {
+  padding: 22px 20px 18px;
+  border-bottom: 1px solid rgba(255,255,255,.08);
+  display: flex; align-items: center; gap: 10px;
+}
+.sidebar-logo-icon {
+  width: 36px; height: 36px; background: var(--accent);
+  border-radius: 10px; display: flex; align-items: center; justify-content: center;
+  font-size: 18px; flex-shrink: 0;
+}
+.sidebar-logo-text { color: var(--white); }
+.sidebar-logo-text strong { display: block; font-size: 14px; font-weight: 700; letter-spacing: .3px; }
+.sidebar-logo-text span { font-size: 10px; color: rgba(255,255,255,.45); letter-spacing: .5px; text-transform: uppercase; }
+
+/* Adjusted sidebar text color for better visibility */
+.nav-item {
+  color: rgba(255, 255, 255, 0.85); /* Increased opacity for better contrast */
+}
+.nav-item:hover {
+  color: rgba(255, 255, 255, 1); /* Full white on hover */
+}
+
+/* Increase size of sidebar buttons */
+.nav-item {
+  padding: 12px 20px; /* Increase padding for larger clickable area */
+  font-size: 15px; /* Increase font size for better readability */
+}
+.nav-item:hover {
+  background: rgba(255, 255, 255, 0.1); /* Slightly darker hover effect */
+}
+
+/* Additional CSS omitted for brevity */

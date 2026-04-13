@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>App</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <div id="app">
+    <nav id="sidebar">
+      <div class="sidebar-logo">
+        <div class="sidebar-logo-icon">🎓</div>
+        <div class="sidebar-logo-text">
+          <strong>AdDU Alumni</strong>
+          <span>Blue Knight Hub</span>
+        </div>
+      </div>
+      <div class="sidebar-section">
+        <div class="sidebar-section-label">Main</div>
+        <div class="nav-item active" data-screen="dashboard"><span class="nav-icon">🏠</span> Home Dashboard</div>
+        <div class="nav-item" data-screen="directory"><span class="nav-icon">📋</span> Alumni Directory</div>
+        <div class="nav-item" data-screen="events"><span class="nav-icon">📅</span> Events <span class="nav-badge">3</span></div>
+        <div class="nav-item" data-screen="calendar"><span class="nav-icon">🗓️</span> My Calendar</div>
+      </div>
+      <div class="sidebar-section">
+        <div class="sidebar-section-label">Networking</div>
+        <div class="nav-item" data-screen="matches"><span class="nav-icon">🤝</span> AI Matches</div>
+        <div class="nav-item" data-screen="mentorship"><span class="nav-icon">🌱</span> Mentorship Hub</div>
+      </div>
+      <div class="sidebar-section">
+        <div class="sidebar-section-label">My Account</div>
+        <div class="nav-item" data-screen="profile"><span class="nav-icon">👤</span> My Profile</div>
+        <div class="nav-item" data-screen="notifications"><span class="nav-icon">🔔</span> Notifications</div>
+      </div>
+    </nav>
+    <div id="main">
+      <div id="topbar">
+        <div>
+          <div class="topbar-title" id="topbar-title">Home Dashboard</div>
+        </div>
+        <div class="topbar-search">
+          <span style="color:var(--gray-500);font-size:15px">🔍</span>
+          <input type="text" placeholder="Search alumni, events...">
+        </div>
+      </div>
+      <div id="page-content"></div>
+    </div>
+  </div>
+  <!-- Login Screen -->
+  <div id="login-screen" style="display: none;">
+    <h1>Login</h1>
+    <form>
+      <label for="username">Username:</label>
+      <input type="text" id="username" name="username">
+      <label for="password">Password:</label>
+      <input type="password" id="password" name="password">
+      <button type="submit">Login</button>
+    </form>
+  </div>
+  <script src="app.js"></script>
+</body>
+</html>
