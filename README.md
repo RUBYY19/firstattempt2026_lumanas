@@ -23,6 +23,9 @@ The application was built based on the design submitted in **Activity #10**, con
 ## **Installation**
 
 ### **Clone the Repository**
+```bash
+git clone https://github.com/RUBYY19/firstattempt2026_lumanas
+```
 
 Using **GitHub**, clone the repository to your computer.
 
