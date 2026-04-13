@@ -6,7 +6,7 @@
 **Vanilla JavaScript**
 
 ## **Module**
-**Web Application Development**
+**Networking & Events**
 
 ---
 
