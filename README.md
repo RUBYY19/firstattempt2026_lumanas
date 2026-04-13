@@ -36,7 +36,7 @@ Since the project uses **Vanilla JavaScript**, **no additional installations or 
 **Steps to run the project:**
 
 1. Open the **project folder**
-2. Locate the file named:
+2. Locate the file named: index.html
 
 
 3. Double-click the file or open it using any web browser such as **Google Chrome** or **Microsoft Edge**.
